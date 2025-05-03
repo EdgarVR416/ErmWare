@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#121212"/>
+  
+  <!-- Grid pattern -->
+  <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+    <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#333333" stroke-width="0.5"/>
+  </pattern>
+  <rect width="1920" height="1080" fill="url(#grid)"/>
+  
+  <!-- Abstract digital elements -->
+  <g opacity="0.15">
+    <!-- Red glow elements -->
+    <circle cx="960" cy="540" r="300" fill="url(#redGlow)"/>
+    
+    <!-- Circuit-like lines -->
+    <path d="M 200,200 H 600 V 400 H 800 V 600 H 1000 V 800 H 1500" stroke="#ff0033" stroke-width="2" fill="none"/>
+    <path d="M 1720,100 V 500 H 1500 V 700 H 1200 V 900" stroke="#ff0033" stroke-width="2" fill="none"/>
+    <path d="M 100,800 H 400 V 600 H 600" stroke="#ff0033" stroke-width="2" fill="none"/>
+    
+    <!-- Binary data particles -->
+    <g fill="#ffffff" opacity="0.4">
+      <text x="300" y="150" font-family="monospace" font-size="12">01001110</text>
+      <text x="500" y="350" font-family="monospace" font-size="12">10101010</text>
+      <text x="700" y="550" font-family="monospace" font-size="12">11001100</text>
+      <text x="900" y="750" font-family="monospace" font-size="12">01010101</text>
+      <text x="1100" y="950" font-family="monospace" font-size="12">11110000</text>
+      <text x="1300" y="250" font-family="monospace" font-size="12">00001111</text>
+      <text x="1500" y="450" font-family="monospace" font-size="12">10011001</text>
+      <text x="1700" y="650" font-family="monospace" font-size="12">01100110</text>
+    </g>
+    
+    <!-- Hexagons -->
+    <g fill="none" stroke="#ff0033" stroke-width="1" opacity="0.3">
+      <polygon points="200,300 250,274 300,300 300,352 250,378 200,352"/>
+      <polygon points="500,500 550,474 600,500 600,552 550,578 500,552"/>
+      <polygon points="800,700 850,674 900,700 900,752 850,778 800,752"/>
+      <polygon points="1100,300 1150,274 1200,300 1200,352 1150,378 1100,352"/>
+      <polygon points="1400,500 1450,474 1500,500 1500,552 1450,578 1400,552"/>
+      <polygon points="1700,700 1750,674 1800,700 1800,752 1750,778 1700,752"/>
+    </g>
+  </g>
+  
+  <!-- Radial Gradient -->
+  <defs>
+    <radialGradient id="redGlow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#ff0033;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#121212;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Logo watermark -->
+  <text x="960" y="540" font-family="Arial, sans-serif" font-size="120" font-weight="bold" text-anchor="middle" fill="#ffffff" opacity="0.05">ErmWare</text>
+</svg> 
